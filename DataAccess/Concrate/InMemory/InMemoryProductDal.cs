@@ -1,5 +1,6 @@
 ﻿using DataAccess.Abstract;
 using Entities.Concrate;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -65,6 +66,11 @@ namespace DataAccess.Concrate.InMemory
             updatedProduct.UnitPrice=product.UnitPrice;
             updatedProduct.CategoryId=product.CategoryId;
             updatedProduct.UnitsInStock=product.UnitsInStock;
+        }
+
+        public List<ProdutDetailDto> GetProdutDetails()
+        {
+            throw new NotImplementedException();
         }
     }
 }
