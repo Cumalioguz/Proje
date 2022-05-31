@@ -30,7 +30,7 @@ namespace Business.Concrate
 
         public IDataResult<List<Product>>GetAll()
         {
-            if (DateTime.Now.Hour==22)
+            if (DateTime.Now.Hour==9)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenaceTime);
             }
@@ -54,7 +54,7 @@ namespace Business.Concrate
 
         public IDataResult<List<ProdutDetailDto>> GetProdutDetails()
         {
-            if (DateTime.Now.Hour ==3)
+            if (DateTime.Now.Hour ==9 )
             {
                 return new ErrorDataResult<List<ProdutDetailDto>>(Messages.MaintenaceTime);
             }
